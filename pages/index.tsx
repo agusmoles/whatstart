@@ -22,6 +22,7 @@ const Home: NextPage = () => {
           content="Ingresá el numero al que le querés hablar y chateale sin agendar"
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://whatstart.vercel.app" />
       </Head>
 
       <main className={styles.main}>
