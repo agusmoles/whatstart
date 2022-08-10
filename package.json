@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:ci": "jest --runInBand",
+    "lint:check": "eslint src/**/*.ts src/**/*.tsx --max-warnings 5",
+    "lint:fix": "eslint src/**/*.ts src/**/*.tsx --fix",
+    "format:check": "prettier --check \"src/**/*.(ts|tsx|js|json|yaml)\"",
+    "format:write": "prettier --write \"src/**/*.(ts|tsx|js|json|yaml)\""
   },
   "dependencies": {
     "next": "12.2.4",
@@ -19,6 +25,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.4",
+    "prettier": "2.7.1",
     "typescript": "4.7.4"
   }
 }
