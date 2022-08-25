@@ -23,6 +23,7 @@ const Home: NextPage = () => {
         <meta name="description" content={t("pageDescription")} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href={t("pageUrl")} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <main className={styles.main}>
