@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
+import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 import PhoneInput from "react-phone-input-2";
-import styles from "../styles/Home.module.css";
 import "react-phone-input-2/lib/material.css";
-import { useState } from "react";
+import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const [phone, setPhone] = useState("");
+  const { t } = useTranslation();
 
   const onChatClick = () => {
     window.open(`https://wa.me/+${phone}`, "_blank");
@@ -16,13 +19,10 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Whatstart - Chateá sin agendar</title>
-        <meta
-          name="description"
-          content="Ingresá el numero al que le querés hablar y chateale sin agendar"
-        />
+        <title>{t("pageTitle")}</title>
+        <meta name="description" content={t("pageDescription")} />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://whatstart.vercel.app" />
+        <link rel="canonical" href={t("pageUrl")} />
       </Head>
 
       <main className={styles.main}>
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           width="250"
           height="250"
           src="/whatsapp-logo.png"
-          alt="Logo 3D de Whatsapp"
+          alt={t("logoDescription")}
         />
 
         <PhoneInput
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             required: true,
             autoFocus: true,
           }}
-          specialLabel="Teléfono"
+          specialLabel={t("phone")}
           containerStyle={{ width: "auto" }}
           inputStyle={{ color: "#000" }}
         />
@@ -61,5 +61,13 @@ const Home: NextPage = () => {
     </div>
   );
 };
+
+export async function getServerSideProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}
 
 export default Home;
