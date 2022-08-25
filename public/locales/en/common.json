@@ -2,6 +2,7 @@
   "pageTitle": "Whatstart - Chat without registering",
   "pageDescription": "Chat directly to the phone number without registering it",
   "pageUrl": "https://chateasinagendar.com.ar",
+  "pageUrlWithoutHttp": "chateasinagendar.com.ar",
 
   "logoDescription": "3D logo of Whatsapp",
   "phone": "Phone"

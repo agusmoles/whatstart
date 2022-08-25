@@ -21,9 +21,29 @@ const Home: NextPage = () => {
       <Head>
         <title>{t("pageTitle")}</title>
         <meta name="description" content={t("pageDescription")} />
+
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href={t("pageUrl")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta property="og:url" content={t("pageUrl")} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={t("pageTitle")} />
+        <meta property="og:description" content={t("pageDescription")} />
+        <meta
+          property="og:image"
+          content="https://chateasinagendar.com.ar/og-image.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content={t("pageUrlWithoutHttp")} />
+        <meta property="twitter:url" content={t("pageUrl")} />
+        <meta name="twitter:title" content={t("pageTitle")} />
+        <meta name="twitter:description" content={t("pageDescription")} />
+        <meta
+          name="twitter:image"
+          content="https://chateasinagendar.com.ar/og-image.png"
+        />
       </Head>
 
       <main className={styles.main}>
