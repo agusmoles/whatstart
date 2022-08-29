@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           });
         `}
       </Script>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
