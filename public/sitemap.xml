@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
    <url>
       <loc>https://chateasinagendar.com.ar</loc>
-      <lastmod>2022-08-25</lastmod>
+      <xhtml:link
+         rel="alternate"
+         hreflang="en"
+         href="https://chateasinagendar.com.ar/en"
+      />
+      <xhtml:link
+         rel="alternate"
+         hreflang="es"
+         href="https://chateasinagendar.com.ar"
+      />
+      <lastmod>2022-09-01</lastmod>
+      <changefreq>daily</changefreq>
+   </url>
+   <url>
+      <loc>https://chat-directly.com</loc>
+      <xhtml:link
+         rel="alternate"
+         hreflang="es"
+         href="https://chat-directly.com/es"
+      />
+      <xhtml:link
+         rel="alternate"
+         hreflang="en"
+         href="https://chat-directly.com"
+      />
+      <lastmod>2022-09-01</lastmod>
       <changefreq>daily</changefreq>
    </url>
 </urlset>
