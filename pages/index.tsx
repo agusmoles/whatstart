@@ -23,7 +23,6 @@ const Home: NextPage = () => {
         <meta name="description" content={t("pageDescription")} />
 
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href={t("pageUrl")} />
         <link
           rel="alternate"
           hrefLang="es"
