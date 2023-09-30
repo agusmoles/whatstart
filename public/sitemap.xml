@@ -16,19 +16,4 @@
       <lastmod>2022-09-01</lastmod>
       <changefreq>daily</changefreq>
    </url>
-   <url>
-      <loc>https://chat-directly.com</loc>
-      <xhtml:link
-         rel="alternate"
-         hreflang="es"
-         href="https://chat-directly.com/es"
-      />
-      <xhtml:link
-         rel="alternate"
-         hreflang="en"
-         href="https://chat-directly.com"
-      />
-      <lastmod>2022-09-01</lastmod>
-      <changefreq>daily</changefreq>
-   </url>
 </urlset>

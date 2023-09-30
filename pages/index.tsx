@@ -28,12 +28,6 @@ const Home: NextPage = () => {
           hrefLang="es"
           href="https://chateasinagendar.com.ar/"
         />
-        <link rel="alternate" hrefLang="en" href="https://chat-directly.com/" />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href="https://chat-directly.com/"
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <meta property="og:url" content={t("pageUrl")} />
